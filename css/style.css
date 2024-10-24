@@ -1,3 +1,10 @@
+.nunito-header_font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 header {
   margin: 1rem;
   position: sticky;
@@ -5,6 +12,7 @@ header {
   background-color: white;
   width: 100%;
   margin: 0;
+  font-family: "Nunito", sans-serif;
 }
 header nav {
   background-image: linear-gradient(white 80%, rgb(230, 230, 230));
@@ -37,7 +45,7 @@ header nav li a {
   color: black;
   padding: 10px 20px;
   text-decoration: none;
-  width: 1fr;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -45,7 +53,7 @@ header nav li:hover {
   background-image: linear-gradient(white, rgb(117, 255, 117), green);
 }
 header nav li:first-child:hover ~ span.line {
-  left: 0px;
+  left: 0;
   width: 20%;
 }
 header nav li:nth-child(2):hover ~ span.line {
@@ -75,6 +83,13 @@ footer {
   text-align: center;
   padding: 5px 0;
   margin-top: 20px;
+}
+
+.nunito-header_font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 body {
