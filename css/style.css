@@ -1,5 +1,84 @@
 header {
-  color: green;
+  margin: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+}
+header nav {
+  background-image: linear-gradient(white 80%, rgb(230, 230, 230));
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0 100px;
+  position: relative;
+}
+header nav ul .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: green;
+  transition: all 0.15s ease-in-out;
+}
+header nav li {
+  display: flex;
+  background-image: linear-gradient(white 80%, rgb(230, 230, 230));
+  justify-content: center;
+  align-items: center;
+}
+header nav li a {
+  display: flex;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+header nav li:hover {
+  background-image: linear-gradient(white, rgb(117, 255, 117), green);
+}
+header nav li:first-child:hover ~ span.line {
+  left: 0px;
+  width: 20%;
+}
+header nav li:nth-child(2):hover ~ span.line {
+  left: 20%;
+  width: 20%;
+}
+header nav li:nth-child(3):hover ~ span.line {
+  left: 40%;
+  width: 20%;
+}
+header nav li:nth-child(4):hover ~ span.line {
+  left: 60%;
+  width: 20%;
+}
+header nav li:nth-child(5):hover ~ span.line {
+  left: 80%;
+  width: 20%;
+}
+
+* img {
+  width: 50px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
