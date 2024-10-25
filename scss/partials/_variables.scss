@@ -7,3 +7,21 @@
     font-weight: 200;
     font-style: normal;
 }
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.space-grotesk-body_font {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .important_text {
+    color: green;
+    font-size: 4rem;
+  }
+
+  $heading-color: rgb(2, 132, 108);
+  $heading-style-font: oblique;

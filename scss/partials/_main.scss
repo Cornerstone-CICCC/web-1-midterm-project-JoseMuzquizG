@@ -1,13 +1,98 @@
-section {
-    width: 100vw;
-    height: 100vh;
+@import './variables';
+
+main {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+// section {
+//     width: 100vw;
+//     height: 100vh;
+// }
+
+.top {
+    display: flex;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;    
+    
+    .greeting_text_heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            strong {
+                display: flex;
+                padding-left: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+
+    .greeting_filling {
+        display: flex;
+        align-items: center;
+        padding: 0 12.5rem;
+
+        .greeting_text {
+            font-size: 2em;
+            margin: 50px;
+        }
+
+        .greeting_img img{
+            width: auto;
+            max-height: 500px;
+            border-radius: 50%;
+            border-color: red;
+        }
+    }
+}
+
+#projects {
+    margin: 112px 0;
+    padding-top: 50px;
+    h2 {
+        display: flex;
+        justify-content: center;  
+        font-size: 3rem;    
+    }
+
+    .project_grid {
+        display: grid;
+        padding: 0 10rem;
+
+        h3 {
+            font-size: 2.5rem;
+            color: $heading-color;
+            font-style: $heading-style-font;
+        }
+
+        .project_grid_filling {
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            p {
+                width: 90%;
+                font-size: 1.5rem;
+            }
+
+            img {
+                justify-self: start;
+                align-self: center;
+                width: 8rem;
+            }
+        }
+        
+    }
 }
 
 
 .back-to-top-btn {
     background-color: rgba(0, 128, 0, 0.255);
-    border-radius: 50%;
-    padding: 1rem 1.5rem;
+    border-radius: 25%;
+    padding: 1rem 1.1rem;
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
@@ -17,6 +102,15 @@ section {
         color: white;
     }
     
+    .material-symbols-outlined {
+        font-size: 1.5rem;
+
+        &:hover {
+            font-size: 2rem;
+        }
+    }
+
+
     &:hover {
         background-color: green;
     }
