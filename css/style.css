@@ -142,6 +142,11 @@ footer {
 main {
   font-family: "Space Grotesk", sans-serif;
 }
+main h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
 
 .top {
   display: flex;
@@ -182,13 +187,8 @@ main {
 }
 
 #projects {
-  margin: 112px 0;
+  margin: 5rem 0;
   padding-top: 50px;
-}
-#projects h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
 }
 #projects .project_grid {
   display: grid;
@@ -211,6 +211,47 @@ main {
   justify-self: start;
   align-self: center;
   width: 8rem;
+}
+
+.solid {
+  background-color: green;
+}
+
+#skills {
+  margin: 5rem 0;
+  padding-top: 50px;
+}
+#skills .skills_filling {
+  display: flex;
+  padding: 0 10rem;
+}
+#skills .skills_filling .skill_text {
+  width: 60%;
+}
+#skills .skills_filling .skill_text p {
+  font-size: 1.5em;
+}
+#skills .skills_filling .individual_skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#skills .skills_filling .individual_skills h4 {
+  margin: 10px 0 0;
+}
+#skills .skills_filling .individual_skills .program {
+  padding: 0.5rem 1rem;
+}
+#skills .skills_filling .individual_skills img {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 50px;
+}
+#skills .skills_filling .individual_skills h4 {
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 .back-to-top-btn {

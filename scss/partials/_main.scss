@@ -2,6 +2,11 @@
 
 main {
     font-family: "Space Grotesk", sans-serif;
+    h2 {
+        display: flex;
+        justify-content: center;  
+        font-size: 3rem;    
+    }
 }
 
 // section {
@@ -52,13 +57,8 @@ main {
 }
 
 #projects {
-    margin: 112px 0;
+    margin: 5rem 0;
     padding-top: 50px;
-    h2 {
-        display: flex;
-        justify-content: center;  
-        font-size: 3rem;    
-    }
 
     .project_grid {
         display: grid;
@@ -87,6 +87,58 @@ main {
         
     }
 }
+
+.solid {
+    background-color: green;
+}
+
+#skills {
+    margin: 5rem 0;
+    padding-top: 50px;
+
+    .skills_filling {
+        display: flex;
+        padding: 0 10rem;
+
+        .skill_text {
+            width: 60%;
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        .individual_skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            h4 {
+                margin: 10px 0 0;
+            }
+
+            .program {
+                padding: .5rem 1rem;
+            }
+            
+            img {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            width: 50px;
+            }
+
+            h4 {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+            }
+
+        }
+
+    }
+
+}
+
 
 
 .back-to-top-btn {
