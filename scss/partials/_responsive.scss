@@ -23,8 +23,12 @@
             .skills_filling {
                 flex-direction: column;
                 
-                .skills_filling_text {
+                .skill_text {
                     width: 100%;
+                }
+
+                .individual_skills {
+                    grid-template-rows: 1fr;
                 }
             }
         } 
