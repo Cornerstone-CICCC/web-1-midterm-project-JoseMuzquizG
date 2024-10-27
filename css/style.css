@@ -14,7 +14,7 @@
 
 .important_text {
   color: green;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 header {
@@ -118,7 +118,7 @@ footer {
 
 .important_text {
   color: green;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .nunito-header_font {
@@ -137,7 +137,7 @@ footer {
 
 .important_text {
   color: green;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 main {
@@ -161,9 +161,10 @@ main h2 {
 }
 .greeting .greeting_text_heading {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .greeting .greeting_text_heading strong {
   display: flex;
@@ -177,19 +178,19 @@ main h2 {
   padding: 0 12.5rem;
 }
 .greeting .greeting_filling .greeting_text {
-  font-size: 2em;
-  margin: 50px;
+  font-size: 1.5rem;
+  margin: 3rem;
 }
 .greeting .greeting_filling .greeting_img img {
   width: auto;
-  max-height: 500px;
+  max-height: 25rem;
   border-radius: 50%;
   border-color: red;
 }
 
 #projects {
   margin: 5rem 0;
-  padding-top: 50px;
+  padding-top: 3rem;
 }
 #projects .project_grid {
   display: grid;
@@ -220,7 +221,7 @@ main h2 {
 
 #skills {
   margin: 5rem 0;
-  padding-top: 50px;
+  padding-top: 3rem;
 }
 #skills .skills_filling {
   display: flex;
@@ -247,7 +248,7 @@ main h2 {
   display: flex;
   align-self: center;
   justify-self: center;
-  width: 50px;
+  width: 4rem;
 }
 #skills .skills_filling .individual_skills h4 {
   display: flex;
@@ -255,6 +256,15 @@ main h2 {
   justify-self: center;
 }
 
+#work_experience {
+  margin: 5rem 0;
+  padding-top: 3rem;
+}
+
+#about {
+  margin: 5rem 0;
+  padding-top: 3rem;
+}
 #about .about_content {
   display: flex;
   flex-wrap: wrap;
@@ -267,19 +277,45 @@ main h2 {
 }
 #about .about_content .about_filling {
   display: grid;
-  grid-template-columns: 8fr 5fr;
+  grid-template-columns: 10fr 5fr;
+  align-items: center;
 }
 #about .about_content .about_filling .about_text {
   padding-right: 3rem;
 }
 #about .about_content .about_filling .about_image {
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  max-width: 20rem;
 }
 #about .about_content .about_filling .about_image img {
   height: auto;
-  width: 100%;
+  width: 70%;
   border-radius: 30%;
+}
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+#contact .contact_text {
+  align-self: center;
+  font-size: 2rem;
+}
+#contact .socials {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 2rem;
+}
+#contact .socials a img {
+  width: 3rem;
+  margin: 2rem;
 }
 
 .back-to-top-btn {

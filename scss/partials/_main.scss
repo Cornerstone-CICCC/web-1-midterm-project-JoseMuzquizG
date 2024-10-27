@@ -9,11 +9,6 @@ main {
     }
 }
 
-// section {
-//     width: 100vw;
-//     height: 100vh;
-// }
-
 .top {
     display: flex;
 }
@@ -26,9 +21,10 @@ main {
     
     .greeting_text_heading {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
+            font-size: 2rem;
 
             strong {
                 display: flex;
@@ -44,13 +40,13 @@ main {
         padding: 0 12.5rem;
 
         .greeting_text {
-            font-size: 2em;
-            margin: 50px;
+            font-size: 1.5rem;
+            margin: 3rem;
         }
 
         .greeting_img img{
             width: auto;
-            max-height: 500px;
+            max-height: 25rem;
             border-radius: 50%;
             border-color: red;
         }
@@ -59,7 +55,7 @@ main {
 
 #projects {
     margin: 5rem 0;
-    padding-top: 50px;
+    padding-top: 3rem;
 
     .project_grid {
         display: grid;
@@ -95,7 +91,7 @@ main {
 
 #skills {
     margin: 5rem 0;
-    padding-top: 50px;
+    padding-top: 3rem;
 
     .skills_filling {
         display: flex;
@@ -125,7 +121,7 @@ main {
             display: flex;
             align-self: center;
             justify-self: center;
-            width: 50px;
+            width: 4rem;
             }
 
             h4 {
@@ -140,12 +136,20 @@ main {
 
 }
 
+#work_experience {
+    margin: 5rem 0;
+    padding-top: 3rem;
+}
+
 #about {
+    margin: 5rem 0;
+    padding-top: 3rem;
+
     .about_content {
         display: flex;
         flex-wrap:wrap;
         padding: 0 10rem;
-
+        
         h3{
             font-size: 1.5rem;
             color: $heading-color;
@@ -154,23 +158,53 @@ main {
 
         .about_filling {
             display: grid;
-            grid-template-columns: 8fr 5fr;
+            grid-template-columns: 10fr 5fr;
+            align-items: center;
             .about_text {
                     padding-right: 3rem;
             }
     
             .about_image {
-                align-self: center;
-                justify-self: center;
+                display: flex;
+                justify-content: center;
+                max-width: 20rem;
 
                 img{
                     height: auto;
-                    width: 100%;
+                    width: 70%;
                     border-radius: 30%;
-                    
                 }
             }
         }
+    }
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    
+    .contact_text {
+        align-self: center;
+        font-size: 2rem;
+    }
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding: 2rem;
+
+        a {
+            img {
+                width: 3rem;
+                margin: 2rem;
+            }
+        }
+
     }
 }
 
