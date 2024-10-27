@@ -151,6 +151,7 @@ main h2 {
 
 .top {
   display: flex;
+  padding: 6rem 0;
 }
 
 .greeting {
@@ -168,7 +169,7 @@ main h2 {
 }
 .greeting .greeting_text_heading strong {
   display: flex;
-  padding-left: 15px;
+  padding-left: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -260,6 +261,9 @@ main h2 {
   margin: 5rem 0;
   padding-top: 3rem;
 }
+#work_experience .experience {
+  padding: 0 10rem;
+}
 
 #about {
   margin: 5rem 0;
@@ -287,6 +291,7 @@ main h2 {
   display: flex;
   justify-content: center;
   max-width: 20rem;
+  min-width: 15rem;
 }
 #about .about_content .about_filling .about_image img {
   height: auto;
@@ -295,12 +300,13 @@ main h2 {
 }
 
 #contact {
+  margin: 5rem 0;
+  padding: 3rem 10rem 0;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
   height: 100vh;
 }
 #contact .contact_text {
@@ -343,6 +349,9 @@ main h2 {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=style.css.map */
