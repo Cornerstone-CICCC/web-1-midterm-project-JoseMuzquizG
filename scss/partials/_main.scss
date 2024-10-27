@@ -45,11 +45,14 @@ main {
             margin-right: 3rem;
         }
 
-        .greeting_img img{
-            width: 15rem;
-            max-height: 25rem;
-            border-radius: 50%;
-            border-color: red;
+        .greeting_img {
+            margin: 2rem 0;
+            img{
+                width: 15rem;
+                max-height: 25rem;
+                border-radius: 50%;
+                border-color: red;
+            }
         }
     }
 }

@@ -182,6 +182,9 @@ main h2 {
   font-size: 1.5rem;
   margin-right: 3rem;
 }
+.greeting .greeting_filling .greeting_img {
+  margin: 2rem 0;
+}
 .greeting .greeting_filling .greeting_img img {
   width: 15rem;
   max-height: 25rem;
@@ -383,8 +386,11 @@ main h2 {
   main #skills .skills_filling {
     flex-direction: column;
   }
-  main #skills .skills_filling .skills_filling_text {
+  main #skills .skills_filling .skill_text {
     width: 100%;
+  }
+  main #skills .skills_filling .individual_skills {
+    grid-template-rows: 1fr;
   }
   main #about .about_content .about_filling {
     flex-wrap: wrap;
