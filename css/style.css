@@ -264,6 +264,30 @@ main h2 {
 #work_experience .experience {
   padding: 0 10rem;
 }
+#work_experience .experience .individual_experience .webdev_diploma {
+  display: flex;
+  margin: 4rem 0;
+}
+#work_experience .experience .individual_experience .webdev_diploma .date_and_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#work_experience .experience .individual_experience .webdev_diploma .date_and_logo p {
+  margin-bottom: 0;
+}
+#work_experience .experience .individual_experience .webdev_diploma .date_and_logo div img {
+  margin: 1rem 1rem;
+  width: 10rem;
+}
+#work_experience .experience .individual_experience .webdev_diploma .title_and_description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#work_experience .experience .individual_experience .webdev_diploma .title_and_description p {
+  margin: 0 2rem;
+}
 
 #about {
   margin: 5rem 0;

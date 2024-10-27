@@ -143,6 +143,38 @@ main {
 
     .experience{
         padding: 0 10rem;
+
+        .individual_experience {
+            .webdev_diploma {
+                display: flex;
+                margin: 4rem 0;
+
+                .date_and_logo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    p {
+                         margin-bottom: 0;
+                    }
+
+                    div img {
+                        margin: 1rem 1rem;
+                        width: 10rem;
+                    }
+                }
+
+                .title_and_description {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
+                    p {
+                        margin: 0 2rem;
+                    }
+                }
+            }
+        }
     }
 }
 
