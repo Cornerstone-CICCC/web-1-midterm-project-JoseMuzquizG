@@ -5,7 +5,7 @@ main {
     h2 {
         display: flex;
         justify-content: center;  
-        font-size: 3rem;    
+        font-size: 2.5rem;    
     }
 }
 
@@ -29,6 +29,7 @@ main {
             justify-content: center;
             align-items: center;
             font-size: 3rem;
+
             strong {
                 display: flex;
                 padding-left: 15px;
@@ -65,7 +66,7 @@ main {
         padding: 0 10rem;
 
         h3 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: $heading-color;
             font-style: $heading-style-font;
         }
@@ -139,12 +140,43 @@ main {
 
 }
 
+#about {
+    .about_content {
+        display: flex;
+        flex-wrap:wrap;
+        padding: 0 10rem;
 
+        h3{
+            font-size: 1.5rem;
+            color: $heading-color;
+            font-style: $heading-style-font;
+        }
+
+        .about_filling {
+            display: grid;
+            grid-template-columns: 8fr 5fr;
+            .about_text {
+                    padding-right: 3rem;
+            }
+    
+            .about_image {
+                align-self: center;
+                justify-self: center;
+
+                img{
+                    height: auto;
+                    width: 100%;
+                    border-radius: 30%;
+                    
+                }
+            }
+        }
+    }
+}
 
 .back-to-top-btn {
     background-color: rgba(0, 128, 0, 0.255);
     border-radius: 25%;
-    padding: 1rem 1.1rem;
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
@@ -152,18 +184,20 @@ main {
     
     a {
         color: white;
-    }
-    
-    .material-symbols-outlined {
-        font-size: 1.5rem;
 
-        &:hover {
-            font-size: 2rem;
-        }
-    }
+        .material-symbols-outlined {
+            font-size: 1.5rem;
+            padding: 1.2rem;
 
+            &:hover {
+                font-size: 2rem;
+                transition: all .25s ease-in-out;
+            }
+        }    
+    }
 
     &:hover {
-        background-color: green;
+        background-color: green;;
+        transition: all .25s ease-in-out;
     }
 }
