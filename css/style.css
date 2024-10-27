@@ -176,14 +176,14 @@ main h2 {
 .greeting .greeting_filling {
   display: flex;
   align-items: center;
-  padding: 0 12.5rem;
+  padding: 0 9rem;
 }
 .greeting .greeting_filling .greeting_text {
   font-size: 1.5rem;
-  margin: 3rem;
+  margin-right: 3rem;
 }
 .greeting .greeting_filling .greeting_img img {
-  width: auto;
+  width: 15rem;
   max-height: 25rem;
   border-radius: 50%;
   border-color: red;
@@ -304,23 +304,24 @@ main h2 {
   font-style: oblique;
 }
 #about .about_content .about_filling {
-  display: grid;
-  grid-template-columns: 10fr 5fr;
+  display: flex;
   align-items: center;
 }
 #about .about_content .about_filling .about_text {
   padding-right: 3rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  width: 170%;
 }
 #about .about_content .about_filling .about_image {
   display: flex;
   justify-content: center;
-  max-width: 20rem;
-  min-width: 15rem;
+  align-self: flex-start;
+  width: fit-content;
+  min-width: 5rem;
 }
 #about .about_content .about_filling .about_image img {
   height: auto;
-  width: 70%;
+  width: 100%;
   border-radius: 30%;
 }
 
@@ -372,6 +373,30 @@ main h2 {
   transition: all 0.25s ease-in-out;
 }
 
+@media (max-width: 854px) {
+  main .top .greeting .greeting_text_heading {
+    flex-direction: column;
+  }
+  main .top .greeting .greeting_filling {
+    flex-direction: column;
+  }
+  main #skills .skills_filling {
+    flex-direction: column;
+  }
+  main #skills .skills_filling .skills_filling_text {
+    width: 100%;
+  }
+  main #about .about_content .about_filling {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main #about .about_content .about_filling .about_text {
+    padding-right: 0;
+  }
+  main #about .about_content .about_filling .about_image {
+    max-width: 17rem;
+  }
+}
 body {
   margin: 0;
   display: flex;

@@ -38,15 +38,15 @@ main {
     .greeting_filling {
         display: flex;
         align-items: center;
-        padding: 0 12.5rem;
+        padding: 0 9rem;
 
         .greeting_text {
             font-size: 1.5rem;
-            margin: 3rem;
+            margin-right: 3rem;
         }
 
         .greeting_img img{
-            width: auto;
+            width: 15rem;
             max-height: 25rem;
             border-radius: 50%;
             border-color: red;
@@ -194,23 +194,24 @@ main {
         }
 
         .about_filling {
-            display: grid;
-            grid-template-columns: 10fr 5fr;
+            display: flex;
             align-items: center;
             .about_text {
-                    padding-right: 3rem;
-                    font-size: 2rem;
+                padding-right: 3rem;
+                font-size: 1.2rem;
+                width: 170%;
             }
     
             .about_image {
                 display: flex;
                 justify-content: center;
-                max-width: 20rem;
-                min-width: 15rem;
+                align-self: flex-start;
+                width: fit-content;
+                min-width: 5rem;
 
                 img{
                     height: auto;
-                    width: 70%;
+                    width: 100%;
                     border-radius: 30%;
                 }
             }

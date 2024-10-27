@@ -1,0 +1,43 @@
+@media (max-width: 854px){
+    main {
+        .top {
+            .greeting {
+                .greeting_text_heading {
+                    flex-direction: column;
+                }
+
+                .greeting_filling {
+                    flex-direction: column;
+                }
+            }
+        }
+        
+        #skills {
+            .skills_filling {
+                flex-direction: column;
+                
+                .skills_filling_text {
+                    width: 100%;
+                }
+            }
+        } 
+        
+        #about {
+            .about_content {
+                .about_filling {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    
+                    .about_text {
+                        padding-right: 0;
+                    }
+
+                    .about_image {
+                        max-width: 17rem;
+                    }
+                }
+            }
+        }
+            
+    }  
+}
